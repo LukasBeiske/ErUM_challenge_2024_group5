@@ -13,4 +13,4 @@ def get_convert_mikly_way():
 plt.imshow(milky_way.detach().cpu().numpy())
 
 def jax_to_torch(jax_tensor):
-    return torch.from_numpy(np.asarray(jax_tensor.copy()))
+    return torch.from_numpy(np.asarray(np.copy(jax_tensor)))
